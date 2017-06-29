@@ -1,0 +1,29 @@
+#!/bin/bash
+#echo time Loading>>CPU_Info.txt 
+while [ 1 ]
+do
+echo -e "`date +%H:%M:%S` \c" #>> CPU_Info.txt
+echo -e "cpu0 current frequency - \c" #>> CPU_Info.txt
+adb shell cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq #>> CPU_Info.txt
+
+echo -e "`date +%H:%M:%S` \c" #>> CPU_Info.txt
+echo -e "cpu1 current frequency - \c" #>> CPU_Info.txt
+adb shell cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq #>> CPU_Info.txt
+
+echo -e "`date +%H:%M:%S` \c" #>> CPU_Info.txt
+echo -e "cpu2 current frequency - \c" #>> CPU_Info.txt
+adb shell cat /sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq #>> CPU_Info.txt
+
+echo -e "`date +%H:%M:%S` \c" #>> CPU_Info.txt
+echo -e "cpu3 current frequency - \c" #>> CPU_Info.txt
+adb shell cat /sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq #>> CPU_Info.txt
+
+#echo "/proc/stat:" >> CPU_Info.txt
+#adb shell cat /proc/stat >> CPU_Info.txt
+
+#echo "/proc/loadavg: " >> CPU_Info.txt
+#adb shell cat /proc/loadavg >> CPU_Info.txt
+
+#echo "-----------------------------------------------------------" >> CPU_Info.txt
+sleep 0.2
+done;
