@@ -6,3 +6,8 @@ http://blog.csdn.net/luoshengyang/article/details/6618363/
 
 jmtool
 ./customize/tools/scripts/decode.sh
+
+ubuntu ÇÐ»»java°æ±¾
+http://blog.csdn.net/ggz631047367/article/details/42366687/
+
+
